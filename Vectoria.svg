@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 180" role="img" aria-labelledby="title desc">
+  <title id="title">Vectoria – Linear Algebra C++ Library Logo (Red Variant)</title>
+  <desc id="desc">Darker gradients with red replacing former greens.</desc>
+
+  <defs>
+    <!-- Red-shifted darker gradients -->
+    <linearGradient id="grad-x" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0080cc"></stop>
+      <stop offset="50%" stop-color="#0099cc"></stop>
+      <stop offset="100%" stop-color="#cc4433"></stop>
+    </linearGradient>
+
+    <linearGradient id="grad-y" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#2b78d1"></stop>
+      <stop offset="50%" stop-color="#00a0c6"></stop>
+      <stop offset="100%" stop-color="#dd5533"></stop>
+    </linearGradient>
+
+    <linearGradient id="grad-z" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0066cc"></stop>
+      <stop offset="50%" stop-color="#0088cc"></stop>
+      <stop offset="100%" stop-color="#bb3322"></stop>
+    </linearGradient>
+
+    <!-- darker glow -->
+    <radialGradient id="grad-glow" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.20"></stop>
+      <stop offset="40%" stop-color="#ffffff" stop-opacity="0.08"></stop>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"></stop>
+    </radialGradient>
+
+    <!-- arrowheads with new gradients -->
+    <marker id="arrow-x" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M1 1 L9 5 L1 9 Z" fill="url(#grad-x)"></path>
+    </marker>
+
+    <marker id="arrow-y" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M1 1 L9 5 L1 9 Z" fill="url(#grad-y)"></path>
+    </marker>
+
+    <marker id="arrow-z" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M1 1 L9 5 L1 9 Z" fill="url(#grad-z)"></path>
+    </marker>
+
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="7" stdDeviation="9" flood-color="#000000" flood-opacity="0.35"></feDropShadow>
+    </filter>
+  </defs>
+
+  <!-- ICON -->
+  <g transform="translate(40,25)" filter="url(#shadow)">
+    <circle cx="80" cy="70" r="68" fill="url(#grad-glow)"></circle>
+
+    <polygon points="35,95 90,115 125,75 70,55" fill="none" stroke="#ffffff" stroke-opacity="0.45" stroke-width="2.5"></polygon>
+
+    <path d="M52 82 L107 102
+             M68 69 L123 89
+             M73 100 L108 60
+             M51 92 L86 52" fill="none" stroke="#ffffff" stroke-opacity="0.20" stroke-width="1.5" stroke-linecap="round"></path>
+
+    <circle cx="80" cy="80" r="6" fill="#ffffff"></circle>
+    <circle cx="80" cy="80" r="10" fill="none" stroke="#ffffff" stroke-opacity="0.35" stroke-width="1.5"></circle>
+
+    <!-- Vectors -->
+    <line x1="80" y1="80" x2="135" y2="60" stroke="url(#grad-x)" stroke-width="5" stroke-linecap="round" marker-end="url(#arrow-x)"></line>
+
+    <line x1="80" y1="80" x2="50" y2="125" stroke="url(#grad-y)" stroke-width="5" stroke-linecap="round" marker-end="url(#arrow-y)"></line>
+
+    <line x1="80" y1="80" x2="95" y2="25" stroke="url(#grad-z)" stroke-width="5" stroke-linecap="round" marker-end="url(#arrow-z)"></line>
+
+    <!-- resultant -->
+    <path d="M80 80 Q102 72 118 48" fill="none" stroke="#ffffff" stroke-opacity="0.70" stroke-width="2.5" stroke-linecap="round"></path>
+    <circle cx="118" cy="48" r="4" fill="#ffffff"></circle>
+
+    <!-- eigen-ish points (now red) -->
+    <circle cx="60" cy="70" r="2.4" fill="#dd3a2c"></circle>
+    <circle cx="97" cy="95" r="2.4" fill="#e06633"></circle>
+    <circle cx="112" cy="68" r="2.4" fill="#2b78d1"></circle>
+  </g>
+
+  <!-- LOGOTYPE -->
+  <g transform="translate(220,80)">
+    <text x="0" y="0" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="52" font-weight="700" letter-spacing="1.2" fill="url(#grad-x)">
+      V
+      <tspan fill="url(#grad-y)">e</tspan>
+      <tspan fill="url(#grad-z)">c</tspan>
+      <tspan fill="#2b78d1">t</tspan>
+      <tspan fill="#0080cc">o</tspan>
+      <tspan fill="#cc4433">r</tspan>
+      <tspan fill="#bb3322">i</tspan>
+      <tspan fill="#e0b93d">a</tspan>
+    </text>
+
+    <text x="2" y="30" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="16" font-weight="400" letter-spacing="3" fill="#ffffff" fill-opacity="0.7" text-transform="uppercase">
+      Linear Algebra · C++
+    </text>
+  </g>
+
+</svg>
